@@ -1,0 +1,40 @@
+{
+  "name": "rucksack",
+  "description": "JavaScript and CSS bundler.",
+  "keywords": [
+    "rucksack",
+    "javascript",
+    "and",
+    "css",
+    "bundler"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "files": [
+    "bin/",
+    "app/",
+    "public/",
+    "lib/",
+    "build/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "scripts/",
+    "cli.js",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/rucksack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/rucksack/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/rucksack#readme"
+}
