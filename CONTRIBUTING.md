@@ -61,6 +61,6 @@ Thanks! :sweat_smile:
 
 
 
-[1]: https://github.com/IonicaBizau/rucksack/issues
+[1]: https://github.com/IonicaBizau/rucksack-new/issues
 
 [2]: https://github.com/IonicaBizau/code-style
