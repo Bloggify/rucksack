@@ -24,10 +24,12 @@ let bundler = new Rucksack();
 
 // Add remote url as resource
 //bundler.add("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js");
-bundler.add(`${__dirname}/data/main.js`);
-bundler.add(`${__dirname}/data/another-main.js`);
+//bundler.add(`${__dirname}/data/main.js`);
+//bundler.add(`${__dirname}/data/another-main.js`);
+bundler.add(`${__dirname}/data/bar.css`);
 bundler.add(`${__dirname}/data/main.css`);
-bundler.bundle();
+bundler.addCSS("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css", false);
+bundler.bundleCSS();
 ```
 
 ## :yum: How to contribute
@@ -43,6 +45,11 @@ to [set up a recurring donation, via Patreon][patreon]. :rocket:
 
 Thanks! :heart:
 
+## :dizzy: Where is this library used?
+If you are using this library in one of your projects, add it in this list. :sparkles:
+
+
+ - [`bloggify-prebuilt`](https://github.com/Bloggify/bloggify-prebuilt#readme)—The prebuilt Bloggify version.
 
 ## :scroll: License
 
