@@ -30,6 +30,7 @@ bundler.add(`${__dirname}/data/bar.css`);
 bundler.add(`${__dirname}/data/main.css`);
 bundler.addCSS("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css", false);
 bundler.bundleCSS();
+bundler.bundleJS();
 ```
 
 ## :yum: How to contribute
