@@ -32,13 +32,6 @@ bundler.addCSS("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles
 bundler.bundleCSS();
 ```
 
-## :memo: Documentation
-
-
-### `()`
-
-
-
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
