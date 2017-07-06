@@ -8,6 +8,7 @@ Ruckasck
 Creates a new instance of `Ruckasck`.
 
 #### Params
+
 - **Object** `opts`: The Rucksack options.
 
 #### Return
@@ -17,6 +18,7 @@ Creates a new instance of `Ruckasck`.
 Downloads the script from the resource file.
 
 #### Params
+
 - **String** `resPath`: The path of the resource.
 - **String** `root`: The file's root path.
 
@@ -24,6 +26,7 @@ Downloads the script from the resource file.
 Downloads the JS scripts from the resource.
 
 #### Params
+
 - **String** `resPath`: The path of the resource.
 - **Boolean** `inline`: Confirms if the resource needs to be downloaded or not.
 
@@ -31,12 +34,14 @@ Downloads the JS scripts from the resource.
 Watch the CSS paths.
 
 #### Params
+
 - **String** `resPath`: The CSS resource path.
 
 ### `addCSS(resPath, inline)`
 Adds a new CSS path.
 
 #### Params
+
 - **String** `resPath`: The CSS resource path to add.
 - **Boolean** `inline`: Whether to add the CSS content inline or not.
 
@@ -44,6 +49,7 @@ Adds a new CSS path.
 Bundles the JS files.
 
 #### Params
+
 - **String** `output`: The output of the JS script.
 - **Function** `cb`: The callback function.
 
@@ -51,6 +57,7 @@ Bundles the JS files.
 Bundles the CSS files.
 
 #### Params
+
 - **String** `output`: The output of the CSS script.
 - **Function** `cb`: The callback function.
 
@@ -86,6 +93,7 @@ Generates the HTML markup for JS.
 Loads the HTML script.
 
 #### Params
+
 - **Array** `resources`: The resources list.
 
 #### Return
