@@ -47,6 +47,7 @@
     "bundle-collapser": "^1.2.1",
     "clean-css": "^3.4.21",
     "fwatcher": "^2.2.5",
+    "idy": "^1.2.7",
     "iterate-object": "^1.3.2",
     "match-all": "^1.2.0",
     "noop6": "^1.0.4",
