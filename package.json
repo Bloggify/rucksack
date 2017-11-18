@@ -9,7 +9,7 @@
     "bundler"
   ],
   "license": "MIT",
-  "version": "2.3.5",
+  "version": "2.3.6",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
