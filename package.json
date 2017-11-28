@@ -32,12 +32,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/IonicaBizau/rucksack-new.git"
+    "url": "git+ssh://git@github.com/Bloggify/rucksack.git"
   },
   "bugs": {
-    "url": "https://github.com/IonicaBizau/rucksack-new/issues"
+    "url": "https://github.com/Bloggify/rucksack/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/rucksack-new#readme",
+  "homepage": "https://github.com/Bloggify/rucksack#readme",
   "dependencies": {
     "abs": "^1.3.6",
     "babel-plugin-transform-remove-strict-mode": "0.0.2",
