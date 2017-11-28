@@ -58,6 +58,7 @@
     "postcss-cssnext": "^2.11.0",
     "postcss-import": "^9.0.0",
     "postcss-url": "^5.1.2",
+    "rucksack-lite": "^4.0.0",
     "streamp": "^2.2.5",
     "uglifyify": "^3.0.4",
     "ul": "^5.2.9",
