@@ -64,6 +64,9 @@
     "watchify": "^3.7.0",
     "watchify-with-cache": "^1.0.1"
   },
+  "blah": {
+    "h_img": "http://i.imgur.com/hSPcrjC.png"
+  },
   "devDependencies": {
     "camelo": "^1.1.5"
   }
