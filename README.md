@@ -12,7 +12,11 @@
 ## :cloud: Installation
 
 ```sh
-$ npm i --save rucksack
+# Using npm
+npm install --save rucksack
+
+# Using yarn
+yarn add rucksack
 ```
 
 
