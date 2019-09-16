@@ -3,5 +3,5 @@ const math = require("./math")
     ;
 
 console.log(math.square(2, 4));
-//console.log($("#my-id"));
+console.log($("#my-id"));
 console.log(camelo("hey there"));
