@@ -61,7 +61,7 @@
     "postcss-url": "^7.3.0",
     "rucksack-lite": "^4.0.0",
     "streamp": "^2.2.5",
-    "uglifyify": "^4.0.5",
+    "uglifyify": "^5.0.2",
     "ul": "^5.2.9",
     "url-remote": "^1.1.3",
     "watchify": "^3.7.0",
