@@ -65,7 +65,7 @@
     "ul": "^5.2.9",
     "url-remote": "^1.1.3",
     "watchify": "^3.7.0",
-    "watchify-with-cache": "^1.0.1"
+    "watchify-cache": "^2.0.0"
   },
   "blah": {
     "h_img": "http://i.imgur.com/hSPcrjC.png"
