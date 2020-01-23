@@ -1,3 +1,17 @@
+:root {
+  --mainColor: red;
+}
+
 strong {
     color: black;
+}
+
+a {
+  color: var(--mainColor);
+}
+
+strong {
+    & > span {
+        color: #fff;
+    }
 }
