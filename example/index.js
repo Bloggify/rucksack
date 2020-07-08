@@ -4,7 +4,11 @@ const Rucksack = require("..")
 
 
 // Create a new bundler
-let bundler = new Rucksack()
+let bundler = new Rucksack({
+	aliases: {
+		"foo": `${__dirname}/data/bar/foo.js`
+	}
+})
 
 // Add remote url as resource
 bundler.add("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js")
