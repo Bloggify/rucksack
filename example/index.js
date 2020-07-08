@@ -22,11 +22,11 @@ bundler.add({
     inline: true
 })
 
-bundler.bundleCSS("test.css")
+bundler.bundleCSS(`${__dirname}/test.css`)
 // => info  [Tuesday, November 28, 2017 06:53:48 AM] Bundling  the styles.
 // => warn  [Tuesday, November 28, 2017 06:53:48 AM] Skipping remote @import of "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css" as resource is not allowed.
 // => @import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css);strong{color:#000}strong{color:#ff0}body{background:#fff;-webkit-transform:translate(10px);transform:translate(10px)}
 
-bundler.bundleJS("test.js")
+bundler.bundleJS(`${__dirname}/test.js`)
 // => info  [Tuesday, November 28, 2017 06:53:48 AM] Bundling  the scripts.
 // => (function e(t,n,r){...})
