@@ -1,6 +1,5 @@
 const math = require("./math")
     , camelo = require("camelo")
-    , foo = require("foo")
     ;
 
 console.log(math.square(2, 4));
