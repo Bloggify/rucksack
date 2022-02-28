@@ -2,12 +2,11 @@
 
 const Rucksack = require("..")
 
-
 // Create a new bundler
 let bundler = new Rucksack({
-	aliases: {
-		"foo": `${__dirname}/data/bar/foo.js`
-	}
+    aliases: {
+        "foo": `${__dirname}/data/bar/foo.js`
+    }
 })
 
 // Add remote url as resource
