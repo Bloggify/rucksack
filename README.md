@@ -212,6 +212,7 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
  - `bloggify-cli`
+ - `@infinitebrahmanuniverse/nolb-ruc`
  - `bloggify-prebuilt`
 
 
