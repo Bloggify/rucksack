@@ -8,6 +8,7 @@ Ruckasck
 Creates a new instance of `Ruckasck`.
 
 #### Params
+
 - **Object** `opts`: The Rucksack options.
 
 #### Return
@@ -17,12 +18,14 @@ Creates a new instance of `Ruckasck`.
 Watch the CSS paths.
 
 #### Params
+
 - **String** `resPath`: The CSS resource path.
 
 ### `addCSS(resPath, inline)`
 Adds a new CSS path.
 
 #### Params
+
 - **String** `resPath`: The CSS resource path to add.
 - **Boolean** `inline`: Whether to add the CSS content inline or not.
 
@@ -30,6 +33,7 @@ Adds a new CSS path.
 Bundles the JS files.
 
 #### Params
+
 - **String** `output`: The output of the JS script.
 - **Function** `cb`: The callback function.
 
@@ -37,6 +41,7 @@ Bundles the JS files.
 Bundles the CSS files.
 
 #### Params
+
 - **String** `output`: The output of the CSS script.
 - **Function** `cb`: The callback function.
 
