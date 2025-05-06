@@ -115,22 +115,6 @@ bundler.bundleJS(`${__dirname}/test.js`)
 
 
 
-
-## :question: Get Help
-
-There are few ways to get help:
-
-
-
- 1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
- 2. For bug reports and feature requests, open issues. :bug:
-
-
-
-
-
-
-
 ## :memo: Documentation
 
 
@@ -179,6 +163,23 @@ Bundles the CSS files.
 
 #### Return
 - **String** The URL of the script.
+
+
+
+
+
+
+
+
+
+## :question: Get Help
+
+There are few ways to get help:
+
+
+
+ 1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
+ 2. For bug reports and feature requests, open issues. :bug:
 
 
 
