@@ -29,7 +29,7 @@
 
 
 
-> JavaScript and CSS bundler.
+> JavaScript and CSS bundler using Vite.
 
 
 
@@ -74,35 +74,26 @@ yarn add rucksack
 
 
 ```js
-const Rucksack = require("rucksack")
+import Rucksack from "rucksack"
+
+const __dirname = new URL(".", import.meta.url).pathname;
 
 // Create a new bundler
 let bundler = new Rucksack({
-    aliases: {
-        "foo": `${__dirname}/data/bar/foo.js`
-    }
+    name: "my-app",
+    bundle_dir: `${__dirname}/output`,
+    bundle_url: "/static",
+    input: `${__dirname}/js-and-css-with-assets/main.js`,
+    production: true,
+    watch: false
 })
 
 // Add remote url as resource
 bundler.add("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js")
-bundler.add(`${__dirname}/data/main.js`)
-bundler.add(`${__dirname}/data/another-main.js`)
-bundler.add(`${__dirname}/data/bar.css`)
-bundler.add(`${__dirname}/data/main.css`)
-//bundler.add({
-//    type: "css",
-//    url: "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css",
-//    inline: true
-//})
 
-bundler.bundleCSS(`${__dirname}/test.css`)
-// => info  [Tuesday, November 28, 2017 06:53:48 AM] Bundling  the styles.
-// => warn  [Tuesday, November 28, 2017 06:53:48 AM] Skipping remote @import of "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css" as resource is not allowed.
-// => @import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css);strong{color:#000}strong{color:#ff0}body{background:#fff;-webkit-transform:translate(10px);transform:translate(10px)}
+bundler.bundle();
 
-bundler.bundleJS(`${__dirname}/test.js`)
-// => info  [Tuesday, November 28, 2017 06:53:48 AM] Bundling  the scripts.
-// => (function e(t,n,r){...})
+console.log(bundler.html())
 ```
 
 
@@ -118,51 +109,45 @@ bundler.bundleJS(`${__dirname}/test.js`)
 ## :memo: Documentation
 
 
-### constructor
-
-Ruckasck
-Creates a new instance of `Ruckasck`.
+### `Rucksack(options)`
+Creates a new instance of `Rucksack`.
 
 #### Params
 
-- **Object** `opts`: The Rucksack options.
+- **Object** `options`: The options object:
+  - `name` (String): The bundle name.
+  - `bundle_dir` (String): The bundle directory.
+  - `bundle_url` (String): The bundle URL.
+  - `input` (String): The input file.
+  - `aliases` (Object): A map of aliases for module resolution.
+  - `production` (Boolean): Whether to bundle for production.
+  - `watch` (Boolean): Whether to watch files for changes.
 
 #### Return
-- **Object** The Rucksack instance.
+- **Object** The Rucksack instance containing:
+  - `options` (Object): The options object.
+  - `bundle_paths` (Object): The bundle paths:
+    - `js` (String): The JS bundle path.
+    - `css` (String): The CSS bundle path.
+  - `bundle_urls` (Object): The bundle URLs:
+    - `js` (String): The JS bundle URL.
+    - `css` (String): The CSS bundle URL.
+  - `local` (Object): The local resources collection.
+    - `js` (Array): The JS resources.
+    - `css` (Array): The CSS resources.
+  - `remote` (Object): The remote resources collection.
+    - `js` (Array): The JS resources.
+    - `css` (Array): The CSS resources.
+  - `markup` (Object): The cached HTML markup:
+    - `js` (String): The JS HTML markup.
+    - `css` (String): The CSS HTML markup.
+    - `all` (String): The combined HTML markup.
 
-### `_watchCSS(resPath)`
-Watch the CSS paths.
-
-#### Params
-
-- **String** `resPath`: The CSS resource path.
-
-### `addCSS(resPath, inline)`
-Adds a new CSS path.
-
-#### Params
-
-- **String** `resPath`: The CSS resource path to add.
-- **Boolean** `inline`: Whether to add the CSS content inline or not.
-
-### `bundleJS(output, cb)`
-Bundles the JS files.
-
-#### Params
-
-- **String** `output`: The output of the JS script.
-- **Function** `cb`: The callback function.
-
-### `bundleCSS(output, cb)`
-Bundles the CSS files.
-
-#### Params
-
-- **String** `output`: The output of the CSS script.
-- **Function** `cb`: The callback function.
+### `bundleJS()`
+Bundles JavaScript files using Vite.
 
 #### Return
-- **String** The URL of the script.
+- **Promise** A promise that resolves when the JavaScript bundling is complete.
 
 
 
@@ -209,15 +194,6 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 
 
 
-
-
-
-## :dizzy: Where is this library used?
-If you are using this library in one of your projects, add it in this list. :sparkles:
-
- - `bloggify`
- - `bloggify-cli`
- - `bloggify-prebuilt`
 
 
 

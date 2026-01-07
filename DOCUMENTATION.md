@@ -2,49 +2,43 @@
 
 You can see below the API reference of this module.
 
-### constructor
-
-Ruckasck
-Creates a new instance of `Ruckasck`.
+### `Rucksack(options)`
+Creates a new instance of `Rucksack`.
 
 #### Params
 
-- **Object** `opts`: The Rucksack options.
+- **Object** `options`: The options object:
+  - `name` (String): The bundle name.
+  - `bundle_dir` (String): The bundle directory.
+  - `bundle_url` (String): The bundle URL.
+  - `input` (String): The input file.
+  - `aliases` (Object): A map of aliases for module resolution.
+  - `production` (Boolean): Whether to bundle for production.
+  - `watch` (Boolean): Whether to watch files for changes.
 
 #### Return
-- **Object** The Rucksack instance.
+- **Object** The Rucksack instance containing:
+  - `options` (Object): The options object.
+  - `bundle_paths` (Object): The bundle paths:
+    - `js` (String): The JS bundle path.
+    - `css` (String): The CSS bundle path.
+  - `bundle_urls` (Object): The bundle URLs:
+    - `js` (String): The JS bundle URL.
+    - `css` (String): The CSS bundle URL.
+  - `local` (Object): The local resources collection.
+    - `js` (Array): The JS resources.
+    - `css` (Array): The CSS resources.
+  - `remote` (Object): The remote resources collection.
+    - `js` (Array): The JS resources.
+    - `css` (Array): The CSS resources.
+  - `markup` (Object): The cached HTML markup:
+    - `js` (String): The JS HTML markup.
+    - `css` (String): The CSS HTML markup.
+    - `all` (String): The combined HTML markup.
 
-### `_watchCSS(resPath)`
-Watch the CSS paths.
-
-#### Params
-
-- **String** `resPath`: The CSS resource path.
-
-### `addCSS(resPath, inline)`
-Adds a new CSS path.
-
-#### Params
-
-- **String** `resPath`: The CSS resource path to add.
-- **Boolean** `inline`: Whether to add the CSS content inline or not.
-
-### `bundleJS(output, cb)`
-Bundles the JS files.
-
-#### Params
-
-- **String** `output`: The output of the JS script.
-- **Function** `cb`: The callback function.
-
-### `bundleCSS(output, cb)`
-Bundles the CSS files.
-
-#### Params
-
-- **String** `output`: The output of the CSS script.
-- **Function** `cb`: The callback function.
+### `bundleJS()`
+Bundles JavaScript files using Vite.
 
 #### Return
-- **String** The URL of the script.
+- **Promise** A promise that resolves when the JavaScript bundling is complete.
 

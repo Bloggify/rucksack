@@ -38,7 +38,11 @@
     "url": "https://github.com/Bloggify/rucksack/issues"
   },
   "homepage": "https://github.com/Bloggify/rucksack#readme",
-  "dependencies": {},
+  "dependencies": {
+    "rucksack-lite": "^6.0.0",
+    "terser": "^5.44.1",
+    "vite": "^7.3.1"
+  },
   "blah": {
     "h_img": "http://i.imgur.com/hSPcrjC.png"
   }
