@@ -9,7 +9,11 @@ let bundler = new Rucksack({
     bundle_url: "/static",
     input: `${__dirname}/js-and-css-with-assets/main.js`,
     production: true,
-    watch: false
+    watch: false,
+    config: async (existingConfig) => {
+        existingConfig.build.rollupOptions.output.format = "es"
+        return existingConfig
+    }
 })
 
 // Add remote url as resource
