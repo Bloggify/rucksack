@@ -1,13 +1,13 @@
 {
   "name": "rucksack",
-  "description": "JavaScript and CSS bundler.",
+  "description": "JavaScript and CSS bundler using Vite.",
   "keywords": [
     "rucksack",
     "javascript",
-    "and",
     "css",
     "bundler"
   ],
+  "type": "module",
   "license": "MIT",
   "version": "6.1.1",
   "main": "lib/index.js",
