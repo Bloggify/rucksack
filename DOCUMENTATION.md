@@ -6,7 +6,6 @@ You can see below the API reference of this module.
 Creates a new instance of `Rucksack`.
 
 #### Params
-
 - **Object** `options`: The options object:
   - `name` (String): The bundle name.
   - `bundle_dir` (String): The bundle directory.
@@ -15,6 +14,7 @@ Creates a new instance of `Rucksack`.
   - `aliases` (Object): A map of aliases for module resolution.
   - `production` (Boolean): Whether to bundle for production.
   - `watch` (Boolean): Whether to watch files for changes.
+  - `config` (Function): An async function to modify the Vite config.
 
 #### Return
 - **Object** The Rucksack instance containing:
