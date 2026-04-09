@@ -6,6 +6,7 @@ You can see below the API reference of this module.
 Creates a new instance of `Rucksack`.
 
 #### Params
+
 - **Object** `options`: The options object:
   - `name` (String): The bundle name.
   - `bundle_dir` (String): The bundle directory.
