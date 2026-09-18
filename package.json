@@ -9,7 +9,7 @@
   ],
   "type": "module",
   "license": "MIT",
-  "version": "7.1.4",
+  "version": "7.1.5",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
