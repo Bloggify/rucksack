@@ -9,7 +9,7 @@
   ],
   "type": "module",
   "license": "MIT",
-  "version": "7.1.5",
+  "version": "7.1.6",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -41,7 +41,7 @@
   "dependencies": {
     "rucksack-lite": "^6.0.0",
     "terser": "^5.44.1",
-    "vite": "^8.0.1"
+    "vite": "^8.3.7"
   },
   "peerDependencies": {
     "vite-plugin-node-polyfills": "^0.28.0"
